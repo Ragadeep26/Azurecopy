@@ -28,7 +28,7 @@ st.set_page_config(page_title='Piles & panels', layout="wide", page_icon="⚙️
 if __name__ == '__main__':
     # Sidebar
     st.sidebar.markdown('# Form selection')
-    select_options = ['Homepage','MIP E-Modul', 'CO2 Evaluator', 'CO2 Evaluator EPD Test', 'Secant piled shaft', 'Secant piled wall', 'Diaphragm panel shaft', 'Diaphragm panel wall', 'Duki-pile buckling',
+    select_options = ['Homepage','MIP E-Modul', 'CO2 Evaluator', 'CO2 Evaluator EPD Test', 'Energy Calculator', 'Secant piled shaft', 'Secant piled wall', 'Diaphragm panel shaft', 'Diaphragm panel wall', 'Duki-pile buckling',
                     'Micropile buckling', 'Concrete reinforcement rect. section', 'Concrete reinforcement circ. section',
                     'Reinforced concrete helper', 'Piles In Tension for offshore', 'Revit/ Dynamo/ Generative design resources', 'About & known issues' ]
 

@@ -8,8 +8,6 @@ def main_energy_calculator(st):
     # ---------------------------
     # Load image (chart reference)
     # ---------------------------
-    st.image(img, caption="Spez. Volume Power Reference Chart")
-
     # ---------------------------
     # Title and description
     # ---------------------------
@@ -102,3 +100,4 @@ def main_energy_calculator(st):
     }
 
     st.dataframe(pd.DataFrame(results.items(), columns=["Parameter", "Value"]))
+    st.image(img, caption="Spez. Volume Power Reference Chart")

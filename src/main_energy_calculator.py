@@ -6,8 +6,6 @@ from PIL import Image
 img = Image.open('./common/spez_volume_power_chart.png')
 def main_energy_calculator(st):
     # ---------------------------
-    # Load image (chart reference)
-    # ---------------------------
     # ---------------------------
     # Title and description
     # ---------------------------
@@ -86,18 +84,23 @@ def main_energy_calculator(st):
     # ---------------------------
     # Output Section
     # ---------------------------
-    st.header("Results")
-
-    results = {
-        "Jetting Volume [l/min]": jetting_volume,
-        "Jetting Power [kW]": jetting_power,
-        "Jetting Power per meter [kWh/m]": jetting_power_per_m,
-        "SV/JGV [l/mHDI]": sv_value,
-        "WB-Auffüllrate [l/min]": wb_value,
-        "mit W/Z ~0.5 [t/mHDI]": mit_value,
-        "Spez. Volume Power [kWh/m³]": spez_volume_power,
-        "~t/mHDI (Cement only)": sixty_one_value
-    }
-
-    st.dataframe(pd.DataFrame(results.items(), columns=["Parameter", "Value"]))
-    st.image(img, caption="Spez. Volume Power Reference Chart")
+    col3,col4 = st.columns(2)
+    with col3:
+        st.header("Results")
+    
+        results = {
+            "Jetting Volume [l/min]": jetting_volume,
+            "Jetting Power [kW]": jetting_power,
+            "Jetting Power per meter [kWh/m]": jetting_power_per_m,
+            "SV/JGV [l/mHDI]": sv_value,
+            "WB-Auffüllrate [l/min]": wb_value,
+            "mit W/Z ~0.5 [t/mHDI]": mit_value,
+            "Spez. Volume Power [kWh/m³]": spez_volume_power,
+            "~t/mHDI (Cement only)": sixty_one_value
+        }
+    
+        st.dataframe(pd.DataFrame(results.items(), columns=["Parameter", "Value"]))
+    with col4:
+        # ---------------------------
+        # Load image (chart reference)
+        st.image(img, caption="Spez. Volume Power Reference Chart")

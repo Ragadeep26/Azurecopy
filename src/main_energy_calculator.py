@@ -89,14 +89,14 @@ def main_energy_calculator(st):
         st.header("Results")
     
         results = {
-            "Jetting Volume [l/min]": jetting_volume,
-            "Jetting Power [kW]": jetting_power,
-            "Jetting Power per meter [kWh/m]": jetting_power_per_m,
-            "SV/JGV [l/mHDI]": sv_value,
-            "WB-Auffüllrate [l/min]": wb_value,
-            "mit W/Z ~0.5 [t/mHDI]": mit_value,
-            "Spez. Volume Power [kWh/m³]": spez_volume_power,
-            "~t/mHDI (Cement only)": sixty_one_value
+            "Jetting Volume [l/min]": round(jetting_volume),
+            "Jetting Power [kW]": round(jetting_power),
+            "Jetting Power per meter [kWh/m]": round(jetting_power_per_m),
+            "SV/JGV [l/mHDI]": round(sv_value),
+            "WB-Auffüllrate [l/min]": round(wb_value),
+            "mit W/Z ~0.5 [t/mHDI]": round(mit_value),
+            "Spez. Volume Power [kWh/m³]": round(spez_volume_power),
+            "~t/mHDI (Cement only)": round(sixty_one_value)
         }
     
         st.dataframe(pd.DataFrame(results.items(), columns=["Parameter", "Value"]))

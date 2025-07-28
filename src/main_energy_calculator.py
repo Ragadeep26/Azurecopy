@@ -3,7 +3,7 @@ import pandas as pd
 import common
 from PIL import Image
 
-img = common.load_image("spez_volume_power_chart.png")
+img = Image.open('./common/spez_volume_power_chart.png')
 def main_energy_calculator(st):
     # ---------------------------
     # Load image (chart reference)

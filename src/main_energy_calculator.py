@@ -94,7 +94,7 @@ def main_energy_calculator(st):
             "Jetting Power per meter [kWh/m]": round(jetting_power_per_m),
             "SV/JGV [l/mHDI]": round(sv_value),
             "WB-Auffüllrate [l/min]": round(wb_value),
-            "mit W/Z ~0.5 [t/mHDI]": round(mit_value),
+            "mit W/Z ~0.5 [t/mHDI]": mit_value,
             "Spez. Volume Power [kWh/m³]": round(spez_volume_power),
             "~t/mHDI (Cement only)": round(sixty_one_value)
         }

@@ -1,0 +1,7 @@
+streamlit==1.14.0
+matplotlib
+scipy
+numpy
+openpyxl
+pandas
+altair==4.0

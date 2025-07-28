@@ -1,0 +1,35 @@
+# Below are all the sections and options you can have in ~/.streamlit/config.toml.
+
+[global]
+disableWatchdogWarning = false
+showWarningOnDirectExecution = true
+
+[client]
+caching = true
+displayEnabled = true
+
+[runner]
+magicEnabled = true
+installTracer = false
+fixMatplotlib = true
+
+
+[server]
+folderWatchBlacklist = ['']
+cookieSecret = "c7Vg6j2h5Z5x-VE8XdM+H9_"
+headless = true
+runOnSave = false
+port = 80
+enableCORS = true
+enableXsrfProtection = false
+
+[browser]
+serverAddress = "bstbkpiles1.azurewebsites.net"
+gatherUsageStats = false
+serverPort = 80
+
+[theme]
+backgroundColor = "#00172B"
+secondaryBackgroundColor = "#0083B8"
+textColor = "#FFD700"
+font = "sans-serif"

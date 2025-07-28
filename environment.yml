@@ -1,0 +1,7 @@
+name: streamlit
+channels:
+  - defaults
+dependencies:
+  - matplotlib
+  - scipy
+#  - streamlit=1.5.1

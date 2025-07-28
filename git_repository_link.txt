@@ -1,0 +1,1 @@
+https://dev.azure.com/bauer-group-prod/_git/bk_statik_NYA
